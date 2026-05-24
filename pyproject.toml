@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clark-semantic-memory"
+version = "0.1.0"
+description = "Standalone Clark-based semantic memory for durable project, tool, rule, and context knowledge."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Altynai & Codex"}]
+dependencies = []
+
+[project.scripts]
+clark-memory = "clark_semantic_memory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["clark_semantic_memory*"]
